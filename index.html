@@ -1,142 +1,731 @@
-<!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/html">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-<header>
-    <div class="logo"><a href="#">Jeyda Parlar</a></div>
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio — Jeyda Parlar</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=DM+Sans:wght@300;400;500&family=DM+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
     <nav>
-        <a href="#about">À propos de moi</a>
-        <a href="#projects">Projets</a>
-        <a href="#contact">Contact</a>
+      <div class="container">
+        <a href="#hero" class="nav-name">Jeyda Parlar</a>
+        <ul class="nav-links">
+          <li><a href="#positionnement">Profil</a></li>
+          <li><a href="#formation">Formation</a></li>
+          <li><a href="#experience">Expérience</a></li>
+          <li><a href="#projets">Projets</a></li>
+          <li><a href="#techniques">Compétences</a></li>
+          <li><a href="#langues">Langues</a></li>
+          <li><a href="#softskills">Soft Skills</a></li>
+          <li><a href="#reflexion">Réflexion</a></li>
+        </ul>
+      </div>
     </nav>
-</header>
 
-<section id="welcome" class="welcome">
-        <div class="text">
-            <h1>Bienvenue à mon portfolio!</h1>
-            <h2>Jeyda Parlar - Étudiante en Informatique</h2>
-            <div class="buttons">
-                <a href="#projects">Portfolio</a>
-                <a href="#contact">Contacts</a>
+    <section id="hero">
+      <div class="container">
+        <div class="hero-inner">
+          <div>
+            <p class="hero-eyebrow fade-up">
+              Portfolio BUT3 Informatique · Promotion 2026
+            </p>
+
+            <h1 class="hero-name fade-up delay-1">Jeyda<br />Parlar</h1>
+
+            <p class="hero-title fade-up delay-2">
+              Développeuse Full-Stack en alternance
+            </p>
+
+            <p class="hero-description fade-up delay-3">
+              Étudiante en 3e année de BUT Informatique et alternante chez IBM
+              CIC Lille en tant que développeuse d'application WEB.
+            </p>
+
+            <a href="cv.pdf" download class="hero-cta fade-up delay-4">
+              ↓ Télécharger mon CV
+            </a>
+
+            <div class="contact-row fade-up delay-4">
+              <a href="mailto:jeydaparlar@email.com" class="contact-chip"
+                >✉ jeydaparlar@email.com</a
+              >
+              <a
+                href="https://www.linkedin.com/in/jeyda-parlar-b20072327/"
+                target="_blank"
+                class="contact-chip"
+                >🔗 LinkedIn</a
+              >
+              <span class="contact-chip">📍 Lille, France</span>
             </div>
-        </div>
-        <div class="photo">
-            <img src="fad1e41d-9dbd-40a6-91e9-f6c1c54f6bd4.jpg" alt="Your Photo">
-        </div>
-</section>
-<section id="about" class="about">
-    <div class="propos">
-        <p class="time-text"><span>À propos de moi</span></p>
-        <p class="day-text">Bonjour, je m’appelle Jeyda Parlar et je suis étudiante en deuxième année de BUT Informatique à l’IUT de Lille.
+          </div>
 
-            Depuis la rédaction de mes premières lignes de code, je ne me vois plus faire autre chose!
-            C’est avec cette passion et curiosité que je souhaite poursuivre une carrière de développeuse d’application.
+          <img
+            src="fad1e41d-9dbd-40a6-91e9-f6c1c54f6bd4.jpg"
+            alt="Photo de profil"
+            class="hero-photo"
+          />
+        </div>
+      </div>
+    </section>
 
-            Ma formation actuelle me permet de développer des compétences solides dans des domaines tels que le développement de logiciel, la gestion de projet, le travail en équipe et la communication. Dans ce cadre, j’ai également pu effectuer plusieurs projets tels que le développement de jeu, de logiciel, et de sites avec Java et ses technologies (Javafx, JEE).
+    <section id="positionnement" class="section">
+      <div class="container">
+        <p class="section-label">01 / Positionnement</p>
+        <h2 class="section-title">Mon profil professionnel</h2>
 
-            En dehors des compétences techniques, je sais communiquer et nouer des liens avec divers profils grâce à ma maitrise de plusieurs langues et à ma capacité à m'adapter à des environnements différents.
-            Je suis aujourd’hui très motivée à mettre en pratique ces compétences et évoluer au sein d'IBM CIC, où je réaliserai un stage de 10 semaines à partir du 7 avril 2025 !</p>
-    </div>
-</section>
-<section id="skills" class="skills">
-    <h2>Mes Compétences</h2>
-    <div class="skills-container">
-        <div class="skill-card">
-            <h3>Developpement</h3>
-            <p>Java ( JavaFx, JEE),JavaScript,C, HTML/CSS</p>
-        </div>
-        <div class="skill-card">
-            <h3>Base de données</h3>
-            <p>PostgreSQL.</p>
-        </div>
-        <div class="skill-card">
-            <h3>Méthodologie de travail</h3>
-            <p>Méthodes Agile, Scrum</p>
-        </div>
-        <div class="skill-card">
-            <h3>Gestion de version</h3>
-            <p>Git, GitLab</p>
-        </div>
-        <div class="skill-card">
-            <h3>Langues</h3>
+        <div class="positioning-grid">
+          <div class="pcard">
+            <p class="pcard-label">🎯 Domaine visé</p>
             <p>
+              Développement de logiciels en full-stack et ingénierie logicielle
+            </p>
+          </div>
+
+          <div class="pcard">
+            <p class="pcard-label">🗓 Projet professionnel</p>
+            <p>
+              Court terme : obtenir mon diplôme et continuer en cycle
+              d'ingénieur en apprentissage.<br /><br />
+              Moyen terme : obtenir mon diplôme d'ingénieur et évoluer vers des
+              postes à responsabilités.
+            </p>
+          </div>
+
+          <div class="pcard">
+            <p class="pcard-label">⚡ Ce qui me motive</p>
+            <p>
+              Travail d'équipe, apprentissage continu et recherche de solutions
+              innovantes
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="formation" class="section">
+      <div class="container">
+        <p class="section-label">02 / Formation</p>
+        <h2 class="section-title">Mon parcours académique</h2>
+
+        <div class="formation-grid">
+          <div class="form-card">
+            <img
+              src="logo_écoles/lycee.png"
+              alt="Lycée Français Charles de Gaulle"
+              class="form-logo"
+            />
+            <div class="form-header">
+              <h3>Lycée Français Charles de Gaulle</h3>
+              <p class="form-year">2023</p>
+            </div>
+            <p class="form-location">Ankara, Turquie</p>
+            <div class="form-details">
+              <p><strong>Diplôme :</strong> Baccalauréat Général</p>
+              <p><strong>Mention :</strong> Bien</p>
+              <p><strong>Spécialités :</strong> NSI, Mathématiques</p>
+            </div>
+          </div>
+
+          <div class="form-card">
+            <img
+              src="logo_écoles/iut_de_lille_logo.jpeg"
+              alt="IUT de Lille"
+              class="form-logo"
+            />
+            <div class="form-header">
+              <h3>BUT Informatique</h3>
+              <p class="form-year">2023 - 2026</p>
+            </div>
+            <p class="form-location">L'IUT de Lille, France</p>
+            <div class="form-details">
+              <p>
+                <strong>Diplôme :</strong> Bachelor Universitaire de Technologie
+              </p>
+              <p><strong>Niveau :</strong> 3e année en cours</p>
+              <p>
+                <strong>Spécialisation :</strong> Développement et ingénierie
+                logicielle
+              </p>
+            </div>
+          </div>
+
+          <div class="form-card">
+            <img
+              src="logo_écoles/Logo_cesi_2022.png"
+              alt="CESI"
+              class="form-logo"
+            />
+            <div class="form-header">
+              <h3>Cycle Ingénieur en Informatique</h3>
+              <p class="form-year">Rentrée 2026</p>
+            </div>
+            <p class="form-location">CESI, France</p>
+            <div class="form-details">
+              <p><strong>Statut :</strong> Admissible</p>
+              <p><strong>Diplôme :</strong> Diplôme d'Ingénieur</p>
+              <p><strong>Formation :</strong> En apprentissage</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="section">
+      <div class="container">
+        <p class="section-label">03 / Expérience</p>
+        <h2 class="section-title">Stage</h2>
+
+        <div class="exp-header">
+          <img src="ibmlogo.png" alt="IBM Logo" class="exp-logo" />
+          <div class="exp-meta">
+            <h3>IBM CIC Lille</h3>
+            <p class="sub">Développeuse Web · Avril 2025 – Juin 2025 · Lille</p>
+          </div>
+        </div>
+
+        <div class="exp-grid">
+          <div class="exp-block">
+            <label>Contexte de l'entreprise</label>
+            <p>
+              IBM est une entreprise internationale spécialisée dans les
+              services informatiques, le conseil et le développement de
+              solutions logicielles pour des clients grands comptes.
+              L'environnement de travail est structuré, orienté qualité
+              logicielle, avec des équipes techniques organisées autour de
+              projets complexes et collaboratifs.
+            </p>
+          </div>
+
+          <div class="exp-block">
+            <label>Mon rôle & autonomie</label>
+            <p>
+              Intégrée à une équipe de développement d'application web, j'ai
+              travaillé principalement en Java sur des tâches de développement
+              et de maintenance d'applications. J'ai commencé avec un
+              accompagnement important, puis j'ai progressivement gagné en
+              autonomie sur l'analyse de tickets, la correction de bugs et la
+              modification de fonctionnalités.
+            </p>
+          </div>
+        </div>
+
+        <div class="exp-block" style="margin-bottom: 2rem">
+          <label>Missions principales</label>
+          <ul class="mission-list">
+            <li>
+              Développement et maintenance de fonctionnalités backend en Java
+            </li>
+            <li>
+              Analyse et compréhension de code existant dans une architecture
+              complexe
+            </li>
+          </ul>
+        </div>
+
+        <div class="exp-grid">
+          <div class="exp-block">
+            <label>Interactions avec l'équipe</label>
+            <p>
+              Participation aux réunions d'équipe, échanges réguliers avec le
+              tuteur pour faire le point sur les tâches et les difficultés
+              rencontrées.
+            </p>
+          </div>
+          <div class="exp-block">
+            <label>Interactions avec les clients</label>
+            <p>
+              Participation à des démonstrations de l'application devant les
+              clients.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <h2 class="section-title" style="margin-top: 3rem">Alternance</h2>
+
+        <div class="exp-header">
+          <img src="ibmlogo.png" alt="IBM Logo" class="exp-logo" />
+          <div class="exp-meta">
+            <h3>IBM CIC Lille</h3>
+            <p class="sub">
+              Développeuse d'application Web · Août 2025 – présent · Lille
+            </p>
+          </div>
+        </div>
+
+        <div class="exp-grid">
+          <div class="exp-block">
+            <label>Contexte de l'entreprise</label>
+            <p>
+              IBM est une entreprise internationale spécialisée dans les
+              services informatiques, le conseil et le développement de
+              solutions logicielles pour des clients grands comptes.
+              L'environnement de travail est structuré, orienté qualité
+              logicielle, avec des équipes techniques organisées autour de
+              projets complexes et collaboratifs.
+            </p>
+          </div>
+
+          <div class="exp-block">
+            <label>Mon rôle & autonomie</label>
+            <p>
+              Intégrée à une équipe agile de développement de logiciel web, j'ai
+              travaillé en autonomie guidée sur des tickets de correction et
+              d'amélioration en full stack.
+            </p>
+          </div>
+        </div>
+
+        <div class="exp-block" style="margin-bottom: 2rem">
+          <label>Missions principales</label>
+          <ul class="mission-list">
+            <li>Développement de nouveaux services API en Java SpringBoot</li>
+            <li>
+              Corrections et amélioration de bugs et de features pour la mise en
+              production en front-end Angular
+            </li>
+          </ul>
+        </div>
+
+        <div class="exp-grid">
+          <div class="exp-block">
+            <label>Interactions avec l'équipe</label>
+            <p>
+              Participation à la méthode agile : daily meetings, rétrospectives
+              et autres rituels sprint.
+            </p>
+          </div>
+          <div class="exp-block">
+            <label>Interactions avec les clients</label>
+            <p>
+              Participation aux démonstrations de l'application devant les
+              clients.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projets" class="section">
+      <div class="container">
+        <p class="section-label">04 / Projets</p>
+        <h2 class="section-title">Mes réalisations</h2>
+
+        <div class="projects-grid">
+          <a href="algo.html" class="project-card">
+            <div class="project-image">
+              <img src="knn.png" alt="Algo K-NN" />
+            </div>
+            <div class="project-content">
+              <h3>Algo K-NN</h3>
+              <p>
+                Implémentation d'un algorithme de classification K-NN avec
+                interface graphique. Chargement de données CSV, visualisation en
+                nuage de points et classification interactive.
+              </p>
+              <div class="project-tags">
+                <span class="tag">JavaFx</span>
+                <span class="tag">Java</span>
+              </div>
+            </div>
+          </a>
+
+          <a href="bitfight.html" class="project-card">
+            <div class="project-image">
+              <img src="bitfightintro.png" alt="BitFight" />
+            </div>
+            <div class="project-content">
+              <h3>BitFight</h3>
+              <p>
+                Jeu développé en 3 jours en équipe avec méthodologie Scrum.
+                Sprints agiles de 2h avec rétrospectives et démos. Application
+                des bonnes pratiques de travail collaboratif.
+              </p>
+              <div class="project-tags">
+                <span class="tag">Java</span>
+                <span class="tag">Scrum</span>
+              </div>
+            </div>
+          </a>
+
+          <a href="itineraire.html" class="project-card">
+            <div class="project-image">
+              <img src="itineraire.png" alt="Itinéraire de voyage" />
+            </div>
+            <div class="project-content">
+              <h3>Itinéraire de voyage</h3>
+              <p>
+                Plateforme de comparaison des coûts et impacts environnementaux
+                de différents itinéraires. Interface graphique intuitive pour
+                des requêtes complexes de voyages multimodaux.
+              </p>
+              <div class="project-tags">
+                <span class="tag">JavaFx</span>
+                <span class="tag">Algorithmes</span>
+              </div>
+            </div>
+          </a>
+
+          <a href="lillochat.html" class="project-card">
+            <div class="project-image">
+              <img src="lillochat.png" alt="LilloChat" />
+            </div>
+            <div class="project-content">
+              <h3>LilloChat</h3>
+              <p>
+                Application web de messagerie avec serveur Java EE.
+                Authentification sécurisée (bcrypt), gestion des threads, envoi
+                de messages/images et système de likes avec protections XSS.
+              </p>
+              <div class="project-tags">
+                <span class="tag">Java EE</span>
+                <span class="tag">PostgreSQL</span>
+                <span class="tag">Sécurité</span>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="techniques" class="section">
+      <div class="container">
+        <p class="section-label">05 / Compétences techniques</p>
+        <h2 class="section-title">Hard Skills</h2>
+
+        <div class="skills-grid">
+          <div class="skill-card">
+            <div class="skill-card-top">
+              <span class="skill-name">Java / SpringBoot</span>
+              <span class="skill-level avance">Avancé</span>
+            </div>
+            <p class="skill-context">
+              Je sais utiliser Java et SpringBoot pour développer des
+              applications web, notamment pour créer des API REST. J'ai
+              travaillé sur des projets personnels et professionnels qui m'ont
+              permis de maîtriser la programmation orientée objet, la gestion de
+              dépendances et les bonnes pratiques de développement.
+            </p>
+            <div class="progress-bar">
+              <div class="progress-fill" style="width: 75%"></div>
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-card-top">
+              <span class="skill-name">TypeScript / Angular</span>
+              <span class="skill-level intermediaire">Intermédiaire</span>
+            </div>
+            <p class="skill-context">
+              J'ai une expérience intermédiaire avec TypeScript et Angular,
+              principalement acquise lors de mon alternance. J'ai travaillé sur
+              des projets front-end pour créer des interfaces utilisateur
+              dynamiques et réactives. Je maîtrise les composants, les services
+              et la gestion d'état.
+            </p>
+            <div class="progress-bar">
+              <div class="progress-fill" style="width: 50%"></div>
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-card-top">
+              <span class="skill-name">Git / GitHub</span>
+              <span class="skill-level avance">Avancé</span>
+            </div>
+            <p class="skill-context">
+              Je maîtrise Git et GitHub, notamment la gestion des branches, les
+              pull requests et la collaboration en équipe. J'ai utilisé GitHub
+              pour héberger mes projets et gérer le versioning de mon code.
+            </p>
+            <div class="progress-bar">
+              <div class="progress-fill" style="width: 75%"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="langues" class="section">
+      <div class="container">
+        <p class="section-label">06 / Langues</p>
+        <h2 class="section-title">Langues parlées</h2>
+
+        <div class="languages-grid">
+          <div class="lang-card">
+            <div class="lang-flag">🇫🇷</div>
+            <h3>Français</h3>
+            <p class="lang-level">C1 - Courant</p>
+            <p class="lang-detail">Très couramment</p>
+          </div>
+
+          <div class="lang-card">
+            <div class="lang-flag">🇬🇧</div>
+            <h3>Anglais</h3>
+            <p class="lang-level">C1 - Courant</p>
+            <p class="lang-detail">Cambridge Certified</p>
+          </div>
+
+          <div class="lang-card">
+            <div class="lang-flag">🇹🇷</div>
+            <h3>Turc</h3>
+            <p class="lang-level">C1 - Bilingue</p>
+            <p class="lang-detail">Langue maternelle • Très couramment</p>
+          </div>
+
+          <div class="lang-card">
+            <div class="lang-flag">🇪🇬</div>
+            <h3>Arabe Égyptien</h3>
+            <p class="lang-level">B1-B2</p>
+            <p class="lang-detail">Très couramment (non-écrit)</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="softskills" class="section">
+      <div class="container">
+        <p class="section-label">07 / Soft Skills</p>
+        <h2 class="section-title">Compétences comportementales</h2>
+
+        <div class="soft-tabs">
+          <button class="tab-btn active" onclick="showTab('etre', this)">
+            Manière d'être
+          </button>
+          <button class="tab-btn" onclick="showTab('communiquer', this)">
+            Communiquer
+          </button>
+          <button class="tab-btn" onclick="showTab('travailler', this)">
+            Travailler ensemble
+          </button>
+        </div>
+
+        <div id="tab-etre" class="tab-panel active">
+          <div class="soft-skill-item">
+            <h3 class="soft-skill-name">Autonomie</h3>
+            <p>
+              L'autonomie est une qualité qui m'a été régulièrement reconnue au
+              cours de mon expérience chez IBM. J'aime comprendre les choses par
+              moi-même avant de solliciter de l'aide. Lorsque j'intègre un
+              nouveau projet, mon réflexe est d'explorer la documentation,
+              analyser le code existant et effectuer mes propres recherches.
+            </p>
+            <div class="situation-box">
+              <strong>Situation concrète</strong>
+              Lors de mon arrivée sur un projet existant, j'ai dû comprendre une
+              base de code importante. Avant de solliciter mon tuteur, j'ai pris
+              le temps d'explorer le projet et de documenter mes questions.
+              Cette approche m'a permis d'être rapidement opérationnelle.
+            </div>
+          </div>
+
+          <div class="soft-skill-item">
+            <h3 class="soft-skill-name">Adaptabilité</h3>
+            <p>
+              Je m'adapte facilement à de nouveaux environnements. Ayant grandi
+              dans un contexte multiculturel et international, j'ai appris à
+              évoluer auprès de personnes ayant des parcours et des façons de
+              travailler différentes.
+            </p>
+            <div class="situation-box">
+              <strong>Situation concrète</strong>
+              En rejoignant IBM, j'ai découvert de nouveaux outils et méthodes
+              de travail. Malgré la complexité initiale, j'ai rapidement trouvé
+              mes repères et pu contribuer aux missions confiées avec une
+              autonomie croissante.
+            </div>
+          </div>
+        </div>
+
+        <div id="tab-communiquer" class="tab-panel">
+          <div class="soft-skill-item">
+            <h3 class="soft-skill-name">Communication interculturelle</h3>
+            <p>
+              La communication est un domaine dans lequel je me sens à l'aise.
+              Je parle plusieurs langues et j'ai grandi dans un environnement
+              international, ce qui m'a permis de développer une grande facilité
+              à échanger avec des personnes aux profils variés.
+            </p>
+            <div class="situation-box">
+              <strong>Situation concrète</strong>
+              Au sein de mon équipe, j'ai régulièrement échangé avec différents
+              intervenants. J'ai appris à reformuler mes questions et à adapter
+              mon discours pour faciliter les échanges.
+            </div>
+          </div>
+
+          <div class="soft-skill-item">
+            <h3 class="soft-skill-name">Réception des feedbacks</h3>
+            <p>
+              Je considère les retours comme des opportunités de progression.
+              J'apprécie recevoir des conseils de personnes plus expérimentées
+              et je cherche à comprendre les raisons derrière les remarques
+              formulées.
+            </p>
+            <div class="situation-box">
+              <strong>Situation concrète</strong>
+              Lors des revues de code et des échanges avec mon tuteur, j'ai reçu
+              plusieurs retours. J'ai pris le temps d'analyser ces remarques
+              pour améliorer mes pratiques.
+            </div>
+          </div>
+        </div>
+
+        <div id="tab-travailler" class="tab-panel">
+          <div class="soft-skill-item">
+            <h3 class="soft-skill-name">Travail en équipe</h3>
+            <p>
+              J'apprécie particulièrement le travail collectif et les échanges
+              qui permettent de faire avancer un projet. Je pense que les
+              meilleurs résultats sont obtenus lorsque chacun peut apporter ses
+              compétences vers un objectif commun.
+            </p>
+            <div class="situation-box">
+              <strong>Situation concrète</strong>
+              Au sein de mon équipe, j'ai régulièrement collaboré avec d'autres
+              développeurs pour comprendre les fonctionnalités, résoudre les
+              problèmes techniques et échanger sur les solutions.
+            </div>
+          </div>
+
+          <div class="soft-skill-item">
+            <h3 class="soft-skill-name">Leadership et initiative</h3>
+            <p>
+              Dans les projets de groupe, j'ai tendance à prendre naturellement
+              le relais lorsque l'organisation devient nécessaire. J'aime faire
+              avancer le travail tout en veillant à ce que chacun puisse
+              participer.
+            </p>
+            <div class="situation-box">
+              <strong>Situation concrète</strong>
+              Lors de travaux en équipe, il m'est arrivé de répartir les tâches
+              et de proposer une organisation lorsque le groupe manquait de
+              direction. Mon objectif est de favoriser une dynamique permettant
+              d'atteindre les objectifs.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="reflexion" class="section">
+      <div class="container">
+        <p class="section-label">08 / Réflexion</p>
+        <h2 class="section-title">Ce que l'expérience m'a appris</h2>
+
+        <div class="reflexive-grid">
+          <div class="rcard">
+            <div class="rcard-icon">💪</div>
+            <h4>Mes points forts</h4>
             <ul>
-                <li>Français - C1</li>
-                <li>Anglais - C1 Cambridge</li>
-                <li>Turc - Langue maternelle</li>
-                <li>Arabe - Langue maternelle</li>
+              <li>Autonomie dans ma recherche et ma compréhension</li>
+              <li>Adaptabilité à de nouveaux environnements techniques</li>
+              <li>Communication facilitée par mon parcours multiculturel</li>
+              <li>Capacité d'apprentissage rapide</li>
+              <li>Sens des responsabilités dans mes missions</li>
             </ul>
-            </p>
-        </div>
-    </div>
-</section>
-<section id="projects" class="projects">
-    <h2>Mes Projets</h2>
-   <div class="all-projects">
-       <div class="grid">
-           <div class="card"><a href="lillochat.html">
-               <p class="card-title">LilloChat</p>
-               <p class="small-desc">
-                   Messagerie Web en Java EE.
-               </p>
-               <div class="go-corner">
-                   <div class="go-arrow"><a href="lillochat.html">→</a></div>
-               </div>
-           </a></div>
-       </div>
-    <div class="grid">
-        <div class="card"><a href="algo.html">
-            <p class="card-title">Algo K-NN</p>
-            <p class="small-desc">
-                Logiciel pour classer des données inconnu.
-            </p>
-                <div class="go-corner">
-                    <div class="go-arrow"><a href="algo.html">→</a></div>
-        </a></div>
-        </div>
-    </div>
-    <div class="grid">
-        <div class="card"><a href="bitfight.html">
-            <p class="card-title">BitFight</p>
-            <p class="small-desc">
-                Un jeu dans le terminal en utilisant la méthode agile.
-            </p>
-            <div class="go-corner">
-                <div class="go-arrow"><a href="bitfight.html">→</a></div>
-            </div>
-        </a></div>
-    </div>
-    <div class="grid">
-        <div class="card"><a href="itineraire.html">
-            <p class="card-title">Itinéraire de voyage</p>
-            <p class="small-desc">
-                Un logiciel permettant de calculer, visualiser et comparer des itinéraires pour un utilisateur donné.
-            </p>
-            <div class="go-corner">
-                <div class="go-arrow"><a href="itineraire.html">→</a></div>
-            </div>
-        </a></div>
-    </div>
-   </div>
-</section>
+          </div>
 
-<section id="contact" class="contact">
-    <h2>Contact</h2>
-    <p> Mail: <a href="mailto:jeydaparlar@gmail.com" style="color:#8F7193FF;">jeydaparlar@gmail.com</a></p>
-    <div class="social">
-        <a href="https://www.linkedin.com/in/jeyda-parlar-b20072327/" class="socialContainer containerThree">
-            <svg class="socialSvg linkdinSvg" viewBox="0 0 448 512"><path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"></path></svg>
-        </a>
-    </div>
-</section>
+          <div class="rcard">
+            <div class="rcard-icon">🎯</div>
+            <h4>Axes de progrès</h4>
+            <ul>
+              <li>Gagner en confiance sur les sujets techniques complexes</li>
+              <li>Prendre plus souvent la parole lors des discussions</li>
+              <li>Développer une expertise en architecture logicielle</li>
+              <li>Apprendre à déléguer davantage</li>
+            </ul>
+          </div>
 
-<footer>
-    <p>Portfolio de Jeyda Parlar</p>
-</footer>
-</body>
+          <div class="rcard">
+            <div class="rcard-icon">💡</div>
+            <h4>Ce que j'ai compris</h4>
+            <ul>
+              <li>
+                J'apprends mieux en expérimentant et cherchant par moi-même
+              </li>
+              <li>Je m'adapte rapidement à de nouveaux contextes</li>
+              <li>
+                J'apprécie comprendre le fonctionnement interne des applications
+              </li>
+              <li>Je prends naturellement un rôle de coordination</li>
+              <li>J'ai besoin de comprendre le "pourquoi" pour assimiler</li>
+            </ul>
+          </div>
+
+          <div class="rcard">
+            <div class="rcard-icon">🚀</div>
+            <h4>Pour progresser</h4>
+            <ul>
+              <li>Être entourée de personnes expérimentées</li>
+              <li>Continuer sur des projets stimulants</li>
+              <li>Recevoir des retours réguliers</li>
+              <li>Progressivement plus de responsabilités</li>
+              <li>Développer mon expertise full stack</li>
+            </ul>
+          </div>
+        </div>
+
+        <div>
+          <p class="section-label" style="margin-bottom: 1.5rem">
+            Synthèse personnelle
+          </p>
+          <p class="reflexive-text">
+            Cette expérience professionnelle a constitué une étape importante
+            dans mon parcours. Avant d'intégrer IBM, ma vision du développement
+            informatique était principalement académique. Découvrir le
+            fonctionnement d'une grande entreprise m'a permis de mieux
+            comprendre les réalités du métier de développeur.<br /><br />
+            L'un des principaux enseignements concerne mon autonomie. J'ai
+            réalisé que ma manière naturelle d'apprendre consiste à explorer,
+            tester et chercher à comprendre avant de solliciter de l'aide. J'ai
+            également découvert ma capacité d'adaptation. Malgré la complexité
+            des outils et des projets, j'ai réussi à trouver rapidement mes
+            repères.<br /><br />
+            Cette expérience m'a permis de mieux comprendre ma place dans un
+            collectif. J'apprécie travailler en équipe et construire des
+            solutions ensemble. Cependant, j'ai remarqué que j'avais tendance à
+            prendre naturellement un rôle d'organisation ou de coordination.<br /><br />
+            Enfin, cette période a confirmé mon intérêt pour le développement
+            logiciel, en particulier pour les aspects backend. Elle m'a montré
+            que je pouvais progresser en confiance. Aujourd'hui, je me sens plus
+            légitime dans mon projet professionnel, plus consciente de mes
+            forces et plus lucide sur les compétences que je souhaite
+            développer.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <p class="footer-name">Jeyda Parlar</p>
+        <p>jeydaparlar@email.com · LinkedIn</p>
+        <p style="margin-top: 2rem; font-size: 0.72rem">
+          Portfolio BUT3 Informatique — Mis à jour Mai 2026
+        </p>
+      </div>
+    </footer>
+
+    <script>
+      function showTab(name, btn) {
+        document
+          .querySelectorAll(".tab-panel")
+          .forEach((p) => p.classList.remove("active"));
+        document
+          .querySelectorAll(".tab-btn")
+          .forEach((b) => b.classList.remove("active"));
+        document.getElementById("tab-" + name).classList.add("active");
+        btn.classList.add("active");
+      }
+    </script>
+  </body>
 </html>
